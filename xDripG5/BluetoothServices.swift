@@ -39,6 +39,9 @@ enum CGMServiceCharacteristicUUID: String {
 
     // Read/Write/Notify
     case ProbablyBackfill = "F8083536-849E-531C-C594-30F1F86A4EA5"
+    
+    // Read/Write/Notify
+    case PerhapsBackfill = "F8083537-849E-531C-C594-30F1F86A4EA5"
 }
 
 

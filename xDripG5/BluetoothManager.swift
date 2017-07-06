@@ -402,7 +402,9 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                 characteristicsToDiscover = [
                     CBUUID(string: CGMServiceCharacteristicUUID.Communication.rawValue),
                     CBUUID(string: CGMServiceCharacteristicUUID.Authentication.rawValue),
-                    CBUUID(string: CGMServiceCharacteristicUUID.Control.rawValue)
+                    CBUUID(string: CGMServiceCharacteristicUUID.Control.rawValue),
+                    CBUUID(string: CGMServiceCharacteristicUUID.PerhapsBackfill.rawValue),
+                    CBUUID(string: CGMServiceCharacteristicUUID.ProbablyBackfill.rawValue)
                 ]
             case .ServiceB?:
                 break
