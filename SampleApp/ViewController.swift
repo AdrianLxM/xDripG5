@@ -12,7 +12,7 @@ import xDripG5
 class ViewController: UIViewController, TransmitterDelegate {
     
     private var transmitter: Transmitter!
-    private let transmitterID = "ChangeMe"
+    private let transmitterID = "40SK9E"
     
     @IBOutlet weak var logView: UITextView!
 
@@ -23,6 +23,7 @@ class ViewController: UIViewController, TransmitterDelegate {
         log("Connecting to transmitter ID: \(transmitterID)")
         log("...")
         self.transmitter = Transmitter(ID: transmitterID, passiveModeEnabled: true)
+        self.transmitter?.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,11 +32,13 @@ class ViewController: UIViewController, TransmitterDelegate {
     }
     
     private func log(_ message: String) {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .none
-        formatter.timeStyle = .short
-        logView.text.append(formatter.string(from: Date()) + " \(message)\n")
-        NSLog(message)
+        DispatchQueue.main.async {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .none
+            formatter.timeStyle = .short
+            self.logView.text.append(formatter.string(from: Date()) + " \(message)\n")
+            NSLog(message)
+        }
     }
     
     

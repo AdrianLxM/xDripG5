@@ -291,6 +291,18 @@ public final class Transmitter: BluetoothManagerDelegate {
             log.error("Error enabling notification: %{public}@", String(describing: error))
             throw TransmitterError.controlError("Error enabling notification: \(error)")
         }
+        do {
+            try bluetoothManager.setNotifyEnabledAndWait(true, forCharacteristicUUID: .PerhapsBackfill)
+        } catch let error {
+            log.error("Error enabling PerhapsBackfill: %{public}@", String(describing: error))
+            throw TransmitterError.controlError("Error enabling notification: \(error)")
+        }
+        do {
+            try bluetoothManager.setNotifyEnabledAndWait(true, forCharacteristicUUID: .ProbablyBackfill)
+        } catch let error {
+            log.error("Error enabling ProbablyBackfill: %{public}@", String(describing: error))
+            throw TransmitterError.controlError("Error enabling notification: \(error)")
+        }
     }
 
     private var cryptKey: Data? {

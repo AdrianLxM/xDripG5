@@ -59,7 +59,6 @@
 		C126DDEB1F0DE7D3009D5BB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C126DDE91F0DE7D3009D5BB8 /* LaunchScreen.storyboard */; };
 		C126DDF61F0DE7D3009D5BB8 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126DDF51F0DE7D3009D5BB8 /* SampleAppTests.swift */; };
 		C126DE011F0DE7D3009D5BB8 /* SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126DE001F0DE7D3009D5BB8 /* SampleAppUITests.swift */; };
-		C126DE0E1F0DEBE8009D5BB8 /* xDripG5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CABDF31C3506F100005705 /* xDripG5.framework */; };
 		C126DE111F0DEF6D009D5BB8 /* xDripG5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CABDF31C3506F100005705 /* xDripG5.framework */; };
 		C126DE121F0DEF6D009D5BB8 /* xDripG5.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43CABDF31C3506F100005705 /* xDripG5.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C126DE151F0DF039009D5BB8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126DE141F0DF039009D5BB8 /* Data.swift */; };
@@ -206,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C126DE111F0DEF6D009D5BB8 /* xDripG5.framework in Frameworks */,
-				C126DE0E1F0DEBE8009D5BB8 /* xDripG5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +463,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "LoopKit Authors";
 				TargetAttributes = {
 					43CABDF21C3506F100005705 = {
@@ -998,6 +996,7 @@
 				C126DE041F0DE7D3009D5BB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C126DE0A1F0DE7D3009D5BB8 /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -1006,6 +1005,7 @@
 				C126DE061F0DE7D3009D5BB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C126DE0B1F0DE7D3009D5BB8 /* Build configuration list for PBXNativeTarget "SampleAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -1014,6 +1014,7 @@
 				C126DE081F0DE7D3009D5BB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

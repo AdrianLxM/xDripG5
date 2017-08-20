@@ -359,7 +359,9 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
         }
     }
 
+
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        log.info("Did connect to peripheral %{public}@", peripheral.identifier.uuidString)
         if central.isScanning {
             central.stopScan()
         }
