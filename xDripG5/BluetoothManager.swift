@@ -96,7 +96,7 @@ class BluetoothManager: NSObject {
         }
 
         let currentState = peripheral?.state ?? .disconnected
-        guard currentState == .disconnected else {
+        guard currentState != .connected else {
             return
         }
 
